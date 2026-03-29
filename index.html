@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo ao AppClass | Centro Paula Souza</title>
+    <style>
+        /* --- Reset e Estilos Gerais (Padrão de Cores CPS) --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #F5F5F5; /* Cinza Claro de Fundo */
+            color: #333333; /* Cinza Escuro para Texto */
+            line-height: 1.6;
+        }
+
+        /* --- Cabeçalho (Header) --- */
+        header {
+            background-color: #B71C1C; /* Vermelho Institucional CPS */
+            color: #FFFFFF;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 4px solid #333333;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        /* --- Conteúdo Principal (Main) --- */
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Seção Sobre */
+        .sobre {
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .sobre h2 {
+            color: #B71C1C;
+            margin-bottom: 15px;
+        }
+
+        /* Seção Funcionalidades (Grid) */
+        .funcionalidades {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 8px;
+            border-top: 4px solid #B71C1C;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #B71C1C;
+            margin-bottom: 10px;
+        }
+
+        /* Seção Componentes Técnicos do Currículo */
+        .curriculo {
+            background-color: #333333;
+            color: #FFFFFF;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+
+        .curriculo h2 {
+            color: #FFFFFF;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .tag {
+            background-color: #B71C1C;
+            color: #FFFFFF;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        /* --- Rodapé (Footer) --- */
+        footer {
+            background-color: #333333;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: auto;
+        }
+
+        footer .creditos {
+            font-weight: bold;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+        }
+
+        footer .escola {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #CCCCCC;
+        }
+
+        /* --- Responsividade --- */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            main { margin: 20px auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>AppClass</h1>
+            <p>Seu Portal Acadêmico Digital</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="sobre">
+            <h2>Bem-vindo, Estudante!</h2>
+            <p>O <strong>AppClass</strong> foi desenvolvido para facilitar sua jornada acadêmica. Centralize suas consultas, organize seu tempo e foque no que realmente importa: seu aprendizado. Acesse tudo o que você precisa em um só lugar, de forma rápida e intuitiva.</p>
+        </section>
+
+        <section class="funcionalidades">
+            <div class="card">
+                <h3>📚 Materiais de Estudo</h3>
+                <p>Acesse slides, apostilas e links recomendados pelos professores para cada disciplina.</p>
+            </div>
+            <div class="card">
+                <h3>📊 Frequência e Notas</h3>
+                <p>Acompanhe seu desempenho acadêmico e controle suas presenças em tempo real.</p>
+            </div>
+            <div class="card">
+                <h3>📅 Calendário de Provas</h3>
+                <p>Fique por dentro das datas de avaliações, entregas de trabalhos e eventos da escola.</p>
+            </div>
+            <div class="card">
+                <h3>💬 Avisos e Notificações</h3>
+                <p>Receba alertas importantes da secretaria e recados diretos dos seus professores.</p>
+            </div>
+        </section>
+
+        <section class="curriculo">
+            <h2>Tecnologias e Conceitos do Nosso Curso</h2>
+            <p style="text-align: center; margin-bottom: 15px; color: #CCCCCC;">Este projeto foi construído aplicando conhecimentos de:</p>
+            <div class="tags-container">
+                <span class="tag">Lógica de Programação</span>
+                <span class="tag">HTML5 & CSS3</span>
+                <span class="tag">Desenvolvimento Web (Front-End)</span>
+                <span class="tag">Banco de Dados (SQL)</span>
+                <span class="tag">Metodologias Ágeis (Agile)</span>
+                <span class="tag">Versionamento (Git/GitHub)</span>
+                <span class="tag">Inteligência Artificial (IA)</span>
+                <span class="tag">Sistemas de Mensageria (MQTT)</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="creditos">Desenvolvido por Alunos do Curso Técnico em Desenvolvimento de Sistemas</p>
+            <p class="escola">Escola Dr. Fausto Cardoso Figueira de Mello</p>
+            <p style="font-size: 0.8rem; margin-top: 15px; color: #999999;">&copy; 2024 - Centro Paula Souza</p>
+        </div>
+    </footer>
+
+</body>
+</html>
